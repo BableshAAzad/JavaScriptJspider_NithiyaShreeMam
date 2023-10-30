@@ -1,23 +1,35 @@
 document.writeln("<h1>Hello JS</h1>");
-// let a = "Bablesh";
-// console.log(a)
+let a = "Bableshshsh";
+console.log(a)
 // // ! length property
 // console.log(a.length);
-// ! slice(strat, end)
+// * slice(strat, end)
 // console.log(a.slice(4,7)); // esh start and skiped to end value mean befor 7 index return 
-// console.log(a.slice(5)) // sh start to end 
+// console.log(a.slice(5)) // sh to end 
 // console.log(a.slice(-3,9))// esh
 // console.log(a.slice(2,-3)) //bl
-// console.log(a.slice(-4,2)) // not return anything 
-// ! substring(start, end)
+// console.log(a.slice(-4,1)) // not return anything 
+// console.log(a.slice()) // Bablesh
+// * substring(start, end)
 // console.log(a.substring(2,4)) // bl
 // console.log(a.substring(4,7)); // esh
 // console.log(a.substring(5)) // sh
-// console.log(a.substring(-4,4)) // Babl
+// console.log(a.substring(-4,3)) // Bab
 // console.log(a.substring(4,-4)) // Babl
 // console.log(a.substring()) // Bablesh
-// ! substr(start, length)
-
+// * substr(start, length)
+// console.log(a.substr(0,3)); // Bab
+// console.log(a.substr(5,3)); // sh
+// console.log(a.substr(-4,3)); // les
+// console.log(a.substr(-1,1)); // h
+// console.log(a.substr(-1,-6)); // not return anything
+// console.log(a.substr()); // Bablesh
+// console.log(a.substr(3)); // lesh
+// * replace(subString, new Word)
+console.log(a.replace("ab", "ZZZ"))
+console.log(a.replace("sh", "XXX"))
+// * replaceAll(subString, new Word)
+console.log(a.replaceAll("n", "V"))
 // !-------------------------------------------
 // let b = "Bablesh kumar aazad";
 // console.log(b.substr(8, 6)); // Kumar
