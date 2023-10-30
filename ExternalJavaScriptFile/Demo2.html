@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo for Internal javaScript</title>
+    <script>
+      function sub() {
+        var x = document.getElementsByClassName("abc");
+        alert(x[0].innerText);
+      }
+    </script>
+    <style>
+      .b {
+        color: cyan;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <span>< class="b">Bablesh AAzad</></span>
+    <form action="">
+      <input type="text" class="abc" />
+      <input type="button" value="Submit" onclick="sub()" />
+    </form>
+  </body>
+</html>
