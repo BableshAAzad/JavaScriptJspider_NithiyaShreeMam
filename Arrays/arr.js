@@ -92,4 +92,90 @@
 // brr.splice(2, 0, "hi", "Hello");
 // console.log(brr); // [10, 20, 'hi', 'Hello', 30]
 // ^------------------------------------------------------------------------------
+// ! join()
+// ? join() converts the array to string 
+// ? the argument inside join method will be added between each element of an array
+// ?doesn't effects the original array
+let arr = [10, 20, 30, 40, 50];
+let e = arr.join(); // console.log(arr.join());
+console.log(e); // 10,20,30,40,50
+console.log(arr.join(""))// 1020304050
+console.log(arr.join(" ")); // 10 20 30 40 50
+console.log(arr.join("+")); // 10+20+30+40+50
+let a = arr.join();
+console.log(typeof a); // string
+console.log(arr); // [10, 20, 30, 40, 50]
+// ^------------------------------------------------------------------------------
+// ! fill()
+// ? fil() every elemnt of an array with the passed argument
+// ? if no argument is passed then it is consider an undefined
+// ? effects the original array
+// let arr = [10, 20, 30, 40, 50];
+// arr.fill();
+// console.log(arr); // [undefined, undefined, undefined, undefined, undefined]
+// let brr  = [10, 20, 30, 40, 50];
+// brr.fill(11);
+// console.log(brr); // [11, 11, 11, 11, 11]
+// ^------------------------------------------------------------------------------
+// ! includes(search_element, from_index)
+// ? include() search whether the elememt is present or not, if the element present return true
+// ? otherwise false where the result in the from of boolean
+// ? accepts the search _element and from_index to the search of an element from the given index in forwords
+// ? if from_index is not specified by default searchs from 0 index
+// let arr = [10, 20, 30, 40, 50];
+//  console.log(arr.includes()); // false
+//  console.log(arr.includes(30)); // true
+//  console.log(arr.includes("30")); // false
+//  console.log(arr.includes(30, 3)); // false
+//  console.log(arr.includes(30, 2)); // true
+//  console.log(arr.includes(30, -1)); // false
+// ^------------------------------------------------------------------------------
+// ! indexOf(search_element, from_index)
+// ? indexOf() returns the index value of the element
+// ? if the elements is not present retuns -1
+// ?  indexOf()  retuns the index of first matched element
+// ? if from_index is declared of the indexOf()  search the element from the given
+// ? index value in forward direction othewise search the element from the 0 index in frorword direction
+// let arr = [10, 20, 30, 40, 50];
+// console.log(arr.indexOf()); // -1
+// console.log(arr.indexOf(30)); // 2
+// console.log(arr.indexOf(60)); // -1
+// console.log(arr.indexOf(30, 3)); // 5
+// console.log(arr.indexOf(40, 4)); // -1
+// console.log(arr.indexOf(30, -2)); // 5
+// console.log(arr.indexOf(30, -4)); // 2
+// ^------------------------------------------------------------------------------
+// ! lasetIndexOf(search_element, from_index)
+// ? lasetIndexOf() returns the index value of the element
+// ?  if the elements is not present retuns -1
+// ? lasetIndexOf() retuns the index of last matched element becase the search is in backword direction
+// ? from_index is declared the lasetIndexOf() search the element from the given index value in backward
+// ? direction otherwise search the element from the backword direction (from the laset index to 0 index).
+// let arr = [10, 20, 30, 40, 50];
+// console.log(arr.lastIndexOf()); // -1
+// console.log(arr.lastIndexOf(30)); // 5
+// console.log(arr.lastIndexOf("30")); // -1
+// console.log(arr.lastIndexOf(80)); //
+// console.log(arr.lastIndexOf());
+// console.log(arr.lastIndexOf());
+// console.log(arr.lastIndexOf());
+// ^------------------------------------------------------------------------------
+// ! flat()
+// ?  flat() flattens the nested array
+// ? the argument can be passed depending upon the number of nested array or else Infinite can be specified
+// let arr = [10, 20, 30, 40, 50];
+// console.log(arr); // [10, 20, 30, 40, 50]
+// console.log(arr.flat()); // [10, 20, 30, 40, 50]
+// console.log(arr.flat(1)); // [10, 20, 30, 40, 50]
 
+// let brr = [10, 20, 30, 40, 50];
+// console.log(brr); // [10, 20, 30, 40, 50]
+
+
+// ^------------------------------------------------------------------------------
+// ! reverse()
+// ?  reverse the element from the array
+// ?  effects the original array
+// let arr = [10, 20, 30, 40, 50];
+// arr.reverse();
+// console.log(arr);// [50, 40, 30, 20, 10]
