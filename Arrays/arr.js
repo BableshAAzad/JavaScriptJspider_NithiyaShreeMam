@@ -167,18 +167,18 @@
 // ! flat()
 // ?  flat() flattens the nested array
 // ? the argument can be passed depending upon the number of nested array or else Infinite can be specified
-let arr = [10, 20, 30, 40, 50];
-console.log(arr); // [10, 20, 30, 40, 50]
-console.log(arr.flat()); // [10, 20, 30, 40, 50]
-console.log(arr.flat(1)); // [10, 20, 30, 40, 50]
+// let arr = [10, 20, 30, 40, 50];
+// console.log(arr); // [10, 20, 30, 40, 50]
+// console.log(arr.flat()); // [10, 20, 30, 40, 50]
+// console.log(arr.flat(1)); // [10, 20, 30, 40, 50]
 
-let brr = [10, 20, [[30]], 40, 50];
-console.log(brr); // [10, 20, Array(1), 40, 50]
-console.log(brr.flat(2)); // [10, 20, 30, 40, 50]
+// let brr = [10, 20, [[30]], 40, 50];
+// console.log(brr); // [10, 20, Array(1), 40, 50]
+// console.log(brr.flat(2)); // [10, 20, 30, 40, 50]
 
-let crr = [10,20, [[[[[[[[[30]]]]]]]]], 40, 50];
-console.log(crr); // [10, 20, Array(1), 40, 50]
-console.log(crr.flat(Infinity)); // [10, 20, 30, 40, 50]
+// let crr = [10,20, [[[[[[[[[30]]]]]]]]], 40, 50];
+// console.log(crr); // [10, 20, Array(1), 40, 50]
+// console.log(crr.flat(Infinity)); // [10, 20, 30, 40, 50]
 
 // ^------------------------------------------------------------------------------
 // ! reverse()
@@ -187,3 +187,5 @@ console.log(crr.flat(Infinity)); // [10, 20, 30, 40, 50]
 // let arr = [10, 20, 30, 40, 50];
 // arr.reverse();
 // console.log(arr);// [50, 40, 30, 20, 10]
+// let brr = [10, 20, 30, 40, 50];
+// console.log(brr.reverse()); // [50, 40, 30, 20, 10]
