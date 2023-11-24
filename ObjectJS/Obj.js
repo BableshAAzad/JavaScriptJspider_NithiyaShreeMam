@@ -12,3 +12,4 @@ let res = JSON.parse(temp);
 console.log(res); // {"ename":"Bheema","eid":123}
 console.log(typeof res); // object
 // ^-----------------------------------------------------------------------------------
+// 
