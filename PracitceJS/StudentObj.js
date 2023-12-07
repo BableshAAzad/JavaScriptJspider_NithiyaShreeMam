@@ -59,17 +59,31 @@ let Student = [
         comm_rating: "1*",
     },
 ];
-
-let OfferedPersons = [];
-let i = 0;
-for (let obj of Student) {
-    if (obj.mock_rating >= 8 && obj.comm_rating === "1*") {
-        OfferedPersons[i++] = obj;
-        delete obj.mock_rating;
-        delete obj.comm_rating;
-        obj.fee_refund = obj.fee * 0.1;
-        obj.requirement = "Offered.....!!!";
-    }
-}
-console.log(OfferedPersons);
+// ^------------for loop-------------------------
+// let OfferedPersons = [];
+// let i = 0;
+// for (let obj of Student) {
+//     if (obj.mock_rating >= 8 && obj.comm_rating === "1*") {
+//         OfferedPersons[i++] = obj;
+//         delete obj.mock_rating;
+//         delete obj.comm_rating;
+//         obj.fee_refund = obj.fee * 0.1;
+//         obj.requirement = "Offered.....!!!";
+//     }
+// }
+// console.log(OfferedPersons);
 // console.log(Student);
+// ^------------map and filter method-------------------------
+let OfferedPersons = Student.map((ele) => {
+    return ele;
+}).filter((obj) => {
+    return obj.mock_rating >= 8 && obj.comm_rating === "1*";
+}).map((obj) => {
+    delete obj.mock_rating;
+    delete obj.comm_rating;
+    obj.fee_refund = obj.fee * 0.1;
+    obj.requirement = "Offered.....!!!";
+    return obj;
+});
+
+console.log(OfferedPersons);
