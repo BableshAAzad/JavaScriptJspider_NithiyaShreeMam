@@ -9,9 +9,10 @@ function* demo() {
 let a = demo();
 console.log(a.next());
 console.log(a.next());
+console.log(a.next().value);
+console.log(a.next().done);
 console.log(a.next());
 console.log(a.next());
-
 
 
 
