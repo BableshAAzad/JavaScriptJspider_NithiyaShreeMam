@@ -74,9 +74,7 @@ let Student = [
 // console.log(OfferedPersons);
 // console.log(Student);
 // ^------------map and filter method-------------------------
-let OfferedPersons = Student.map((ele) => {
-    return ele;
-}).filter((obj) => {
+let OfferedPersons = Student.filter((obj) => {
     return obj.mock_rating >= 8 && obj.comm_rating === "1*";
 }).map((obj) => {
     delete obj.mock_rating;
