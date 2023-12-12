@@ -35,14 +35,12 @@ document.addEventListener("submit", (e) => {
     if (username == "" || passwordDDD == "") {
         alert("Please Enter usename and password morethan 6 charactors");
     }
-    else if (username > 6 && passwordDDD > 6) {
+    else if (username.length > 6 && passwordDDD.length > 6) {
         localStorage.setItem("UserName", username);
         localStorage.setItem("PassWord", passwordDDD);
         // console.log(username);
         // console.log(passwordDDD);
         alert("Registration Done......")
-    } else {
-        alert("Please enater valid details....!!!");
     }
 });
 // ^------------------Reset--------------------------------------------
@@ -57,8 +55,7 @@ document.getElementById("res").addEventListener("click", (e) => {
     password.classList.remove("warning");
 });
 
-
-
+// localStorage.clear();
 
 
 
