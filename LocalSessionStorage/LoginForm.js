@@ -1,3 +1,23 @@
+// ^------------------Login--------------------------------------------
+document.addEventListener("submit", (e) => {
+    // e.preventDefault();
+    let username = document.getElementById("username").value;
+    let passwordDDD = document.getElementById("password").value;
+    // console.log(username);
+    // console.log(passwordDDD);
+    if (username.length < 6 && passwordDDD.length < 6)
+        alert("Please Enter correct Username and Paasword ")
+    let user = localStorage.getItem("UserName");
+    let pass = localStorage.getItem("PassWord");
+    // console.log(user);
+    // console.log(pass);
+    if (username === user && passwordDDD === pass) {
+        alert("Login Successfull......");
+        window.open("https://bableshaazad.com");
+    } else {
+        alert("Wrong UserName And Password")
+    }
+});
 // ^------------------UserName validation-------------------------------
 document.getElementById("username").addEventListener("keyup", (e) => {
     let leng = username.value.length;
@@ -27,32 +47,22 @@ document.getElementById("showpass").addEventListener("click", () => {
     let newType = (current === "password") ? "text" : "password";
     passType.setAttribute("type", newType);
 });
-// ^------------------Submit--------------------------------------------
-// let arr = [];
-// let i=0;
-// function storeData(key, value) {
-//     arr[i++] = { username : key, password : value };
-// }
-
-document.addEventListener("submit", (e) => {
-    e.preventDefault();
-    let username = document.getElementById("username").value;
-    let passwordDDD = document.getElementById("password").value;
-    if (username == "" || passwordDDD == "") {
-        alert("Please Enter usename and password morethan 6 charactors");
-    }
-    else if (username.length > 6 && passwordDDD.length > 6) {
-        // console.log(username);
-        // console.log(passwordDDD);
-        let tempUser = username.slice(0, 4);
-        let tempPass = "" + passwordDDD.slice(0, 4);
-        let passNew = "@#" + tempUser + tempPass;
-        alert("Registration Done ==> " + passNew)
-        localStorage.setItem("UserName", username);
-        localStorage.setItem("PassWord", passNew);
-        window.open("./LoginForm.html");
-    }
-});
+// ^------------------Register--------------------------------------------
+// document.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     let username = document.getElementById("username").value;
+//     let passwordDDD = document.getElementById("password").value;
+//     if (username == "" || passwordDDD == "") {
+//         alert("Please Enter usename and password morethan 6 charactors");
+//     }
+//     else if (username.length > 6 && passwordDDD.length > 6) {
+//         localStorage.setItem("UserName", username);
+//         localStorage.setItem("PassWord", passwordDDD);
+// console.log(username);
+// console.log(passwordDDD);
+//         alert("Registration Done......")
+//     }
+// });
 // ^------------------Reset--------------------------------------------
 document.getElementById("res").addEventListener("click", (e) => {
     let username = document.getElementById("username");
@@ -64,12 +74,4 @@ document.getElementById("res").addEventListener("click", (e) => {
     password.classList.remove("success");
     password.classList.remove("warning");
 });
-
-
-
 // localStorage.clear();
-
-
-
-
-
