@@ -1,0 +1,18 @@
+.mainS {
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+
+}
+
+.mainS div {
+    display: none;
+    font-size: 40px;
+    margin-top: 70%;
+    margin-left: 20px;
+}
+
+.mainS:hover div {
+    display: block;
+    transition: all 3s;
+}
