@@ -1,0 +1,27 @@
+[
+    {
+        "ename": "Bablesh",
+        "sid": 123,
+        "branch": "ET&T"
+    },
+    {
+        "ename": "Kumar",
+        "sid": 333,
+        "branch": "Mech"
+    },
+    {
+        "ename": "AAzad",
+        "sid": 444,
+        "branch": "Civil"
+    },
+    {
+        "ename": "Sharad",
+        "sid": 555,
+        "branch": "IT"
+    },
+    {
+        "ename": "Sahu",
+        "sid": 666,
+        "branch": "Mining"
+    }
+]
