@@ -17,10 +17,11 @@ async function eDetails() {
     let data = await fetch("./Data.json");
     let finalData = await data.json();
     finalData.map((ele) => {
-        diveR.innerHTML = `<div> 
+        diveR.innerHTML += `<div> 
         <img src=${ele.epic}></img>
+        <h4> Buyer Name : ${ele.ename}</h4>
+        <p> Product ID : ${ele.sid}</p>
         </div>`;
-        // console.log(ele);
     })
 }
 eDetails();

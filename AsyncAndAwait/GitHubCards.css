@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(34, 94, 94);
+}
+#sect{
+    display: flex;
+    flex-wrap: wrap;
+}
+#sect div{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    background-color: rgb(99, 122, 33);
+    border-radius: 0px 20px;
+    box-shadow: 3px 4px 6px rgb(0, 0, 0);
+}
+#sect div:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+#sect div img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+#sect div h2{
+    text-transform: capitalize;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(41, 63, 63);
+}
+#sect div a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#sect div a:hover{
+    text-decoration: underline;
+}

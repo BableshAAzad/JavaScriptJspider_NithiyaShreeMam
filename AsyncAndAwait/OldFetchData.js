@@ -4,7 +4,7 @@ document.getElementById("btn").addEventListener("click", makerequest);
 
 function makerequest() {
     console.log("Button Clicked");
-    fetch('FetchMyData.json').then((res) => {
+    fetch('OldFetchMyData.json').then((res) => {
             if (!res.ok) {
                 throw Error(res.statusText)
             }
