@@ -1,0 +1,80 @@
+[
+    {
+        "bname": "Bablesh",
+        "bid": 123,
+        "bage": 25,
+        "address": "Bhilai",
+        "bimg" : "https://source.unsplash.com/1400x400/?nature, sea"
+    },
+    {
+        "bname": "AAzad",
+        "bid": 124,
+        "bage": 21,
+        "address": "Bihar",
+        "bimg" : "https://source.unsplash.com/1400x400/?nature, hills"
+    },
+    {
+        "bname": "Bablesh",
+        "bid": 125,
+        "bage": 22,
+        "address": "Goa",
+        "bimg" : "https://source.unsplash.com/1400x400/?nature, river"
+    },
+    {
+        "bname": "Durgesh",
+        "bid": 126,
+        "bage": 29,
+        "address": "Ranchi",
+        "bimg" : "https://source.unsplash.com/1400x400/?nature, tree"
+    },
+    {
+        "bname": "Kisaore",
+        "bid": 127,
+        "bage": 18,
+        "address": "Guahanti",
+        "bimg" : "https://source.unsplash.com/1400x400/?nature, frog"
+    },
+    {
+        "bname": "Dadal",
+        "bid": 128,
+        "bage": 27,
+        "address": "Korba",
+        "bimg" : "https://source.unsplash.com/1400x400/?nature, butterfly"
+    },
+    {
+        "bname": "Lawan",
+        "bid": 129,
+        "bage": 29,
+        "address": "Bihar",
+        "bimg" : "https://source.unsplash.com/1400x400/?nature, bus"
+    },
+    {
+        "bname": "Bhupesh",
+        "bid": 130,
+        "bage": 59,
+        "address": "CG",
+        "bimg" : "https://source.unsplash.com/1400x400/?nature, hill"
+    },
+    {
+        "bname": "Damodar",
+        "bid": 131,
+        "bage": 13,
+        "address": "Chhiraa",
+        "bimg" : "https://source.unsplash.com/1400x400/?nature, bug"
+    },
+    {
+        "bname": "Koba",
+        "bid": 132,
+        "bage": 14,
+        "address": "Saja",
+        "bimg" : "https://source.unsplash.com/1400x400/?nature, bed"
+    },
+    {
+        "bname": "Birraha",
+        "bid": 133,
+        "bage": 76,
+        "address": "Kolhapur",
+        "bimg" : "https://source.unsplash.com/1400x400/?nature, water"
+    }
+    
+]

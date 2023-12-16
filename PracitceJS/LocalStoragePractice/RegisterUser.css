@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(67, 70, 30, 0.411);
+}
+form{
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid red;
+    box-shadow: 2px 3px 6px black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}

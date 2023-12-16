@@ -21,12 +21,12 @@ document.getElementById("password").addEventListener("keyup", (e) => {
     }
 });
 // ^------------------Show Password-------------------------------------
-document.getElementById("showpass").addEventListener("click", () => {
-    let passType = document.getElementById("password");
-    let current = passType.getAttribute("type");
-    let newType = (current === "password") ? "text" : "password";
-    passType.setAttribute("type", newType);
-});
+// document.getElementById("showpass").addEventListener("click", () => {
+//     let passType = document.getElementById("password");
+//     let current = passType.getAttribute("type");
+//     let newType = (current === "password") ? "text" : "password";
+//     passType.setAttribute("type", newType);
+// });
 // ^------------------Submit--------------------------------------------
 // let arr = [];
 // let i=0;
