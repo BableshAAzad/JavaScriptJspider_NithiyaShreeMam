@@ -9,21 +9,24 @@
 </head>
 
 <body>
-
-    <form action="">
-            <label for="userName">Use Name</label>
-            <input type="text" name="username" id="userName">
+    <section>
+        <h2>Registration Form</h2>
+        <form action="" id="form">
+            <label for="username">Use Name<span style="color: red;">*</span></label><br>
+            <input type="text" name="username" id="username" autocomplete="on">
+            <p id="userNameLen">(More than 6 charactor)</p>
+            <br>
+            <label for="mono">Mobile Number<span style="color: red;">*</span></label><br>
+            <input type="number" name="mono" id="mono" autocomplete="on">
+            <p id="monoLength">Mobile Number Correct 10 Digit</p>
+            <br>
+            <label for="email">Email<span style="color: red;">*</span></label><br>
+            <input type="email" name="email" id="email" required>
             <br><br>
-            <label for="mono">Mobile Number</label>
-            <input type="number" name="mono" id="mono">
-            <br><br>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <br><br>
-            <input type="submit">
-            <input type="reset">
-    </form>
-
+            <input type="submit" id="submit">
+            <input type="reset" id="reset">
+        </form>
+    </section>
 
     <script src="RegisterUser.js"></script>
 </body>

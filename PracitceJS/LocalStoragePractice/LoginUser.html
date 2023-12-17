@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Through LocalStorage</title>
+    <link rel="stylesheet" href="LoginUser.css">
+</head>
+
+<body>
+    <section>
+        <h2>Login Form</h2>
+        <form action="" id="form">
+            <label for="username">UseName <span style="color: #e9c155;">or</span> Mobile No. <span
+                    style="color: #e9c155">or</span> Email<span style="color: red;">*</span></label><br>
+            <input type="text" name="username" id="username" autocomplete="on">
+            <p id="userNameLen">Length : </p>
+            <br>
+            <label for="password">Password <span style="color: red;">*</span></label>
+            <input type="checkbox" name="" id="showpassword"><span>Show Password</span>
+            <br>
+            <input type="password" name="password" id="password">
+            <br><br>
+            <input type="submit" value="Login" id="login">
+            <input type="reset" id="reset">
+        </form>
+    </section>
+    <script src="LoginUser.js"></script>
+</body>
+
+</html>

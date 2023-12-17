@@ -35,7 +35,7 @@ document.getElementById("password").addEventListener("keyup", (e) => {
 // }
 
 document.addEventListener("submit", (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     let username = document.getElementById("username").value;
     let passwordDDD = document.getElementById("password").value;
     if (username == "" || passwordDDD == "") {

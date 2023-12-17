@@ -19,7 +19,7 @@ section {
 section h2 {
     position: absolute;
     /* margin-bottom: 250px; */
-    color: rgb(255, 94, 0);
+    color: rgb(0, 255, 200);
     letter-spacing: 2px;
     font-weight: 1000;
     text-shadow: 1px 1px 3px black;
@@ -39,8 +39,7 @@ section form {
 }
 
 section form #username,
-#mono,
-#email {
+#password{
     font-size: 22px;
     padding-left: 5px;
     padding-right: 5px;
@@ -58,7 +57,7 @@ section form label {
 }
 
 section form #reset,
-#submit {
+#login {
     width: 60%;
     font-size: 17px;
     margin-left: 17%;
@@ -66,36 +65,33 @@ section form #reset,
     transition: all 0.9s ease;
 }
 
-section form #submit {
+section form #login {
     margin-bottom: 7px;
     border-radius: 0px 10px;
-
+    
 }
-
-section form #submit:hover {
+section form #login:hover{
     color: white;
     background-color: rgb(1, 180, 1);
 }
-
-section form #submit:disabled {
-    background-color: rgba(105, 135, 235, 0.507);
-    color: rgb(166, 183, 199);
-    cursor: not-allowed;
-}
-
-section form #reset {
+section form #reset{
     border-radius: 0px 10px;
 }
-
-section form #reset:hover {
+section form #reset:hover{
     color: white;
     background-color: rgb(240, 34, 34);
 }
 
-#form.warning {
+#form.warning{
     box-shadow: 2px 2px 10px 2px red;
 }
-
-#form.success {
+#form.success{
     box-shadow: 2px 2px 10px 2px green;
+}
+
+
+
+/* **8888888888888888888888 */
+section form #showpassword{
+    margin-left: 18%;
 }
