@@ -1,0 +1,20 @@
+#table{
+    border: 2px solid ;
+}
+#table thead th{
+    border: 2px solid green;
+    background-color: green;
+    color: yellow;
+}
+
+#table tr td{
+    border: 1px solid red;
+    padding: 10px;
+}
+
+
+#table tr td img{
+height: 190px;
+width: 180px;
+
+}
