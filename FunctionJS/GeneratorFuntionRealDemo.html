@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Function Real Time Example</title>
+</head>
+
+<body>
+    <h1>Generator Function in JavaScript</h1>
+    <h2>New Dynamic Id : <span id="newId"></span></h2>
+    <input type="submit" value="Generate New Id" onclick="getNewId()">
+
+
+    <script>
+        function* simpleGenerator() {
+            let i = 100;
+            while (true) {
+                i++;
+                yield i;
+            }
+            // yield i;
+            // return "Hello";
+        }
+        let sG = simpleGenerator();
+        function getNewId() {
+            document.getElementById("newId").innerHTML = sG.next().value;
+            // console.log(sG.next())
+        }
+    </script>
+</body>
+
+</html>
