@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#mainOuter {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+/* ^--------------form section---------------- */
+form {
+    /* border: 1px solid green; */
+    /* width: 30%;/ */
+}
+/* form input{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} */
+/* *--------------table section--------------- */
+#tableSub {
+    display: none;
+    width: 30%;
+    /* border: 1px solid rgb(25, 0, 255); */
+}
+#tableSub table thead tr th{
+    padding: 0% 5vw;
+}
+#tableSub table tbody tr td{
+    width: 50%;
+}

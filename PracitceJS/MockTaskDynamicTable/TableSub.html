@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Subject</title>
+    <link rel="stylesheet" href="TableSub.css">
+</head>
+
+<body>
+
+    <section id="mainOuter">
+        <form>
+            <label for="subjcet">Subject</label>
+            <input type="text" name="subjcet" id="subjcet" placeholder="Enter Subject Name">
+            <br><br>
+            <label for="time">Time</label>
+            <input type="text" name="time" id="time" placeholder="Enter Time">
+            <br><br>
+            <input type="submit" value="Update" id="sbmt">
+        </form>
+        <br>
+        <section id="tableSub">
+            <table border="1px" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </section>
+    </section>
+    <script src="TableSub.js"></script>
+</body>
+
+</html>
