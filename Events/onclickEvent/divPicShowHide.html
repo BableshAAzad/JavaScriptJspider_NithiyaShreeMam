@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Button Picture show hide</title>
+    <style>
+        #showPic {
+            width: 200px;
+            height: 250px;
+            border: 1px solid red;
+            margin: 20px;
+        }
+
+        #showPic.addColor {
+            /* background-color: yellow; */
+            background-image: url("./../pic/monkey.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="clickButton">Click Me!</button>
+    <div id="showPic"></div>
+    <script>
+        // ^------------ change to color --------------
+        // document.getElementById("clickButton").onclick = function () {
+        //     let temp = document.getElementById("showPic");
+        //     temp.style.background = temp.style.background == "yellow" ? "black" : "yellow";
+        // }
+        //  ^-------------onclick show and hide picture in div
+        document.getElementById("clickButton").onclick = function () {
+            let temp = document.getElementById("showPic");
+            temp = temp.classList == "addColor" ? temp.classList.remove("addColor") : temp.classList.add("addColor");
+        }
+    </script>
+</body>
+
+</html>
