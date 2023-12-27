@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyBoard Event HTML</title>
+</head>
+
+<body>
+    <label for="fname">First Name : </label>
+    <input type="text" name="fname" id="fname" onkeydown="keyDown()" onkeypress="keyPress()" onkeyup="keyUp()"> <br><br>
+
+    <label for="lname">Last Name : </label>
+    <input type="text" name="lname" id="lname" onkeypress="keyPress()"> <br><br>
+
+    <label for="address">Address : </label>
+    <input type="text" name="address" id="address" onkeyup="keyUp()"> <br><br>
+
+
+
+    <script>
+        function keyDown() {
+            document.body.style.background = "yellow";
+        }
+        function keyPress() {
+            document.body.style.background = "green";
+        }
+        function keyUp() {
+            document.body.style.background = "cyan";
+        }
+    </script>
+</body>
+
+</html>
