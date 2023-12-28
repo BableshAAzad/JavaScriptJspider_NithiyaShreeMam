@@ -1,0 +1,16 @@
+table {
+    border: 1px solid black;
+}
+
+table thead tr td {
+    border: 1px solid white;
+    padding: 30px 50px;
+    color: white;
+}
+
+table tbody tr td {
+    border: 1px solid gray;
+    padding: 30px 50px;
+    background-color: rgb(7, 113, 113);
+    color: white;
+}
