@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registerForm.css">
+</head>
+
+<body>
+    <h2 style="margin-bottom: 20px;">Registration Form</h2>
+    <form action="">
+        <label for="username">UserName <span style="color: red; font-size: 15px;">*</span></label>
+        <input type="text" id="username" autocomplete="on">
+        <p>(Please Enter More than 6 character)</p>
+        <br>
+        <label for="mobile">Mobile Number <span style="color: red; font-size: 15px;">*</span></label>
+        <input type="number" id="mobile" autocomplete="on">
+        <p>(Please Enter More than 6 character)</p>
+        <br>
+        <div id="termCon">
+            <input type="checkbox" id="showpass">
+            <label for="showpass"><a href="#" id="termCon">Terms & Condition</a></label>
+            <span style="color: red; font-size: 15px;">*</span>
+        </div>
+        <br>
+        <div id="buttonDone">
+            <input type="submit" value="Register" class="btn sub">
+            <br>
+            <input type="reset" id="res">
+        </div>
+        <section id="footerSection">
+            <a href="#">Forgot Password</a>
+            <a href="#">Login Form</a>
+        </section>
+    </form>
+    <script src="registerForm.js"></script>
+</body>
+
+</html>

@@ -9,10 +9,12 @@ body {
     justify-content: center;
     align-items: center;
 }
-body h2{
+
+body h2 {
     position: absolute;
     margin-top: -380px;
 }
+
 form {
     font-size: 20px;
     padding: 20px;
@@ -29,35 +31,49 @@ form input {
     padding-left: 8px;
 }
 
-form .btn {
-    background-color: #ecaa47;
-    color: white;
-    border: 1px double orange;
-    border-radius: 0px 10px;
-    transition: 2s;
-    padding: 0px 15px;
-}
-
-form #res {
-    background-color: #ecaa47;
-    color: white;
-    border: 1px double orange;
-    border-radius: 0px 10px;
-    transition: 2s;
-    padding: 0px 15px;
-}
-
-form .sub:hover {
-    background-color: green;
-}
-
-form #res:hover {
-    background-color: red;
-}
-
 form p {
     font-size: 15px;
     color: rgb(104, 103, 105);
+}
+
+form #termCon #termCon {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+form #buttonDone {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form #buttonDone .btn {
+    background-color: #ecaa47;
+    color: white;
+    border: 1px double orange;
+    border-radius: 0px 10px;
+    transition: 2s;
+    padding: 0px 15px;
+}
+
+form #buttonDone #res {
+    background-color: #ecaa47;
+    color: white;
+    border: 1px double orange;
+    border-radius: 0px 10px;
+    transition: 2s;
+    padding: 0px 15px;
+}
+
+form #buttonDone .sub:hover {
+    background-color: green;
+}
+
+form #buttonDone #res:hover {
+    background-color: red;
 }
 
 #password.warning {
@@ -74,4 +90,18 @@ form p {
 
 #username.success {
     box-shadow: 6px -2px 5px green;
+}
+
+form #footerSection{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+form #footerSection a{
+    text-decoration: none;
+    font-size: 17px;
+}
+form #footerSection a:hover{
+    text-decoration: underline;
 }

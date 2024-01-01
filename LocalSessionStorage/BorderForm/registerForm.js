@@ -10,59 +10,62 @@ document.getElementById("username").addEventListener("keyup", (e) => {
         username.classList.add("success");
     }
 });
-// ^------------------Password validation-------------------------------
-document.getElementById("password").addEventListener("keyup", (e) => {
-    if (password.value.length <= 6) {
-        password.classList.add("warning");
-        password.classList.remove("success");
+// ^------------------mobile validation-------------------------------
+document.getElementById("mobile").addEventListener("keyup", (e) => {
+    if (mobile.value.length <= 6) {
+        mobile.classList.add("warning");
+        mobile.classList.remove("success");
     } else {
-        password.classList.remove("warning");
-        password.classList.add("success");
+        mobile.classList.remove("warning");
+        mobile.classList.add("success");
     }
 });
-// ^------------------Show Password-------------------------------------
+// ^------------------Show mobile-------------------------------------
 // document.getElementById("showpass").addEventListener("click", () => {
-//     let passType = document.getElementById("password");
+//     let passType = document.getElementById("mobile");
 //     let current = passType.getAttribute("type");
-//     let newType = (current === "password") ? "text" : "password";
+//     let newType = (current === "mobile") ? "text" : "mobile";
 //     passType.setAttribute("type", newType);
 // });
 // ^------------------Submit--------------------------------------------
 // let arr = [];
 // let i=0;
 // function storeData(key, value) {
-//     arr[i++] = { username : key, password : value };
+//     arr[i++] = { username : key, mobile : value };
 // }
 
 document.addEventListener("submit", (e) => {
     // e.preventDefault();
     let username = document.getElementById("username").value;
-    let passwordDDD = document.getElementById("password").value;
-    if (username == "" || passwordDDD == "") {
-        alert("Please Enter usename and password morethan 6 charactors");
-    }
-    else if (username.length > 6 && passwordDDD.length > 6) {
+    let mobileDDD = document.getElementById("mobile").value;
+    if (username == "") {
+        alert("Please fill username")
+    } else if (mobileDDD == "") {
+        alert("Please fill mobile number")
+    } else if (username == "" || mobileDDD == "") {
+        alert("Please fill username and mobile number");
+    } else if (username.length > 6 && mobileDDD.length > 6) {
         // console.log(username);
-        // console.log(passwordDDD);
+        // console.log(mobileDDD);
         let tempUser = username.slice(0, 4);
-        let tempPass = "" + passwordDDD.slice(0, 4);
+        let tempPass = "" + mobileDDD.slice(0, 4);
         let passNew = "@#" + tempUser + tempPass;
         alert("Registration Done ==> " + passNew)
         localStorage.setItem("UserName", username);
-        localStorage.setItem("PassWord", passNew);
+        localStorage.setItem("mobile", passNew);
         window.open("./LoginForm.html");
     }
 });
 // ^------------------Reset--------------------------------------------
 document.getElementById("res").addEventListener("click", (e) => {
     let username = document.getElementById("username");
-    let password = document.getElementById("password");
+    let mobile = document.getElementById("mobile");
     // console.log(username);
-    // console.log(password);
+    // console.log(mobile);
     username.classList.remove("success");
     username.classList.remove("warning");
-    password.classList.remove("success");
-    password.classList.remove("warning");
+    mobile.classList.remove("success");
+    mobile.classList.remove("warning");
 });
 
 
