@@ -34,11 +34,12 @@ document.getElementById("mono").addEventListener("keyup", () => {
 });
 // ^---------------------Form Submit validation-------------------------------
 document.addEventListener("submit", (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     let useNameValue = document.getElementById("username").value;
     let moNoValue = document.getElementById("mono").value;
     let emailVaue = document.getElementById("email").value;
-
+    let termCond = document.getElementById("termCond").value;
+    console.log(termCond);
     let existOrNot = checkKey();
     // console.log(existOrNot);
     if (useNameValue.length > 6 && moNoValue.length == 10 && existOrNot == "") {
@@ -107,3 +108,11 @@ document.addEventListener("reset", () => {
     foram.classList.remove("success");
     foram.classList.remove("warning");
 })
+
+// ^----------------------footer option------------------------------
+function forgotPassword() {
+    window.open("./FogotPassword.html");
+}
+function loginForm() {
+    window.open("./LoginUser.html");
+}
