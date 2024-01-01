@@ -12,11 +12,22 @@ async function demo() {
     })
 }
 // demo();
-
-try{
+// ^-------try catch-----------------
+try {
     let a = "hello";
-    console.log(a);
-    console.log(b)
-}catch{
-   console.log("error hai");
+    // console.log(a);
+    // console.log(b)
+} catch {
+    //    console.log("error hai");
 }
+// *------------------------------------
+let pro = new Promise((res, rej) => {
+    // res("resolved......");
+    rej("Rejected......");
+})
+
+Promise.all([pro]).then((e) => {
+    console.log(e);
+}).catch((err) => {
+    console.log(err);
+})

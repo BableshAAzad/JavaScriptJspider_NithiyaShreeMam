@@ -16,7 +16,7 @@ postData.addEventListener("submit", (e) => {
 let updateData = document.getElementById("updateData");
 updateData.addEventListener("submit", (e) => {
   e.preventDefault();
-  let formData = new FormData("updataData")
+  let formData = new FormData(updateData)
   let username = formData.get("username");
   let password = formData.get("password");
   let update_id = document.getElementById("update_id").value;
@@ -31,9 +31,7 @@ updateData.addEventListener("submit", (e) => {
 let deleteData = document.getElementById("deleteData");
 deleteData.addEventListener("submit", () => {
   let delete_id = document.getElementById("delete_id").value;
-  fetch(`http://localhost:3000/users/${delete_id}`, {
-    method: "DELETE"
-  })
+  fetch(`http://localhost:3000/users/${delete_id}`, {method: "DELETE"})
 })
 
 let getData = document.getElementById("getData");
