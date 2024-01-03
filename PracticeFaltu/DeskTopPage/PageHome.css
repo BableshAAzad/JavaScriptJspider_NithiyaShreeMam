@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    background-color: blueviolet;
+    height: 35px;
+    margin-top: -4.3vh;
+}
+
+#outerBody {
+    border: 1px solid green;
+    width: auto;
+    height: 400vh;
+    display: flex;
+}
+
+/* ^-----------left part-------------------- */
+#outerBody #leftSec1 {
+    border: 1px solid blue;
+    width: 15%;
+    height: 100%;
+    word-wrap: break-word;
+}
+
+#outerBody #leftSec1 #leftSideDiv1 {
+    background-color: pink;
+    height: 40px;
+}
+
+#outerBody #leftSec1 #leftSideDiv2 {
+    background-color: green;
+    height: 40px;
+}
+
+#outerBody #leftSec1 #leftSideDiv3 {
+    background-color: red;
+    height: 40px;
+}
+
+#outerBody #leftSec1 #leftSideDiv4 {
+    background-color: yellow;
+    height: 40px;
+}
+
+#outerBody #leftSec1 #leftSideDiv5 {
+    background-color: magenta;
+    height: 40px;
+}
+
+#outerBody #leftSec1 #leftSideDiv6 {
+    background-color: orange;
+    height: 40px;
+}
+
+#outerBody #leftSec1 #leftSideDiv7 {
+    background-color: lightgreen;
+    height: 40px;
+}
+
+#outerBody #leftSec1 #leftSideDiv8 {
+    background-color: gray;
+    height: 40px;
+}
+
+/* ^--------------body part----------------- */
+#outerBody #bodySec2 {
+    border: 1px solid red;
+    width: 70%;
+    margin: 2px;
+}
+
+#outerBody #bodySec2 #bodydiv1 {
+    height: 11%;
+    background-color: pink;
+}
+
+#outerBody #bodySec2 #bodydiv2 {
+    height: 11%;
+    background-color: green;
+}
+
+#outerBody #bodySec2 #bodydiv3 {
+    height: 11%;
+    background-color: red;
+}
+
+#outerBody #bodySec2 #bodydiv4 {
+    height: 11%;
+    background-color: yellow;
+}
+
+#outerBody #bodySec2 #bodydiv5 {
+    height: 11%;
+    background-color: magenta;
+}
+
+#outerBody #bodySec2 #bodydiv6 {
+    height: 11%;
+    background-color: orange;
+}
+
+#outerBody #bodySec2 #bodydiv7 {
+    height: 11%;
+    background-color: lightgreen;
+}
+
+#outerBody #bodySec2 #bodydiv8 {
+    height: 11%;
+    background-color: gray;
+}
+
+/* ^--------------right part------------- */
+#outerBody #RightSec3 {
+    border: 1px solid rgb(255, 230, 0);
+    width: 15%;
+    background-color: #35e0e0;
+    word-wrap: break-word;
+}
+
+#buttonTop {
+    position: sticky;
+    top: 93%;
+    margin-left: 95%;
+    font-size:150%;
+    z-index: 100;
+    color: blue;
+}
