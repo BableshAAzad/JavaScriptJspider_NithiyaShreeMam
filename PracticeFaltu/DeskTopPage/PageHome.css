@@ -65,6 +65,7 @@
     height: 40px;
 }
 
+
 /* ^--------------body part----------------- */
 #outerBody #bodySec2 {
     border: 1px solid red;
@@ -112,6 +113,19 @@
     background-color: gray;
 }
 
+#outerBody #bodySec2 #bodydiv1,
+#bodydiv2,
+#bodydiv3,
+#bodydiv4,
+#bodydiv5,
+#bodydiv6,
+#bodydiv7,
+#bodydiv8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ^--------------right part------------- */
 #outerBody #RightSec3 {
     border: 1px solid rgb(255, 230, 0);
@@ -124,7 +138,7 @@
     position: sticky;
     top: 93%;
     margin-left: 95%;
-    font-size:150%;
+    font-size: 150%;
     z-index: 100;
     color: blue;
 }
