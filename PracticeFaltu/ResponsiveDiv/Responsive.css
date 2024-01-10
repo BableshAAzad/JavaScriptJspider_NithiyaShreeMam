@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#mainDiv{
+    width: 50vh;
+    height: 50vh;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+#mainDiv form #name,#email,#mobile,#address{
+    padding: 10px;
+    margin: 5px;
+}
+#mainDiv form #submit{
+    width: 15vh;
+    height: 5vh;
+    
+}

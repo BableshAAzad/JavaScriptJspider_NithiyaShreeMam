@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #mainDiv {
+            width: 50vh;
+            height: 50vh;
+            border: 1px solid red;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+        }
+
+        #mainDiv form #name,
+        #email,
+        #mobile,
+        #address {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        #mainDiv form #submit {
+            width: 15vh;
+            height: 5vh;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <form action="">
+            <input type="text" placeholder="Enter Your full Name" id="name" />
+            <br><br>
+            <input type="email" placeholder="Enter Email Id" id="email" />
+            <br><br>
+            <input type="number" placeholder="Enter mobile Number" id="mobile" />
+            <br><br>
+            <input type="text" placeholder="Enter Address" id="address" />
+            <br><br>
+            <input type="submit" value="Register" id="submit" />
+        </form>
+    </div>
+</body>
+
+</html>
