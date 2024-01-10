@@ -1,22 +1,44 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#mainDiv{
-    width: 50vh;
-    height: 50vh;
-    border: 1px solid red;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
+
+#mainDiv {
+    width: 80%;
+    max-width: 400px;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
-#mainDiv form #name,#email,#mobile,#address{
+
+#mainDiv form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#mainDiv form input {
+    width: 100%;
     padding: 10px;
-    margin: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }
-#mainDiv form #submit{
-    width: 15vh;
-    height: 5vh;
-    
+
+#mainDiv form #submit {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 25%;
+}
+
+/* Responsive Styles */
+@media only screen and (min-width: 600px) {
+    #mainDiv {
+        width: 50%;
+    }
 }
