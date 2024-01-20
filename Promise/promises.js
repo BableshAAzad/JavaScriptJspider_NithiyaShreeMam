@@ -144,7 +144,7 @@
 // & any()
 // ? any() methods accepts the first resolved promise
 // ? any() methods returns the statement/value of first resolved promise
-// ? if all promises are rejected returns ==> AggregateError: "All promises were rejected" and finally execute
+// ^ if all promises are rejected returns ==> AggregateError: "All promises were rejected" and finally execute
 // ? if all promises are pending then there is no result
 
 
