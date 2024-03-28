@@ -16,3 +16,4 @@
 // *-------------------------------------------
 // const newSet = new Set([4, 5, 6, 7]);
 // console.log(newSet);// Outputs Set {4,5,6,7}
+console.log(typeof(10+false+10))
